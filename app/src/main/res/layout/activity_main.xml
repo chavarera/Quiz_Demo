@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsmaller"
+    tools:context="com.protutr.gitoo.MainActivity">
+
+<RelativeLayout
+    android:id="@+id/toolbar"
+    android:layout_margin="16dp"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/gitoo" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:src="@drawable/medal2" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home"/>
+</RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:background="@drawable/bgsmallers"
+
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:text="Who is she?"/>
+
+
+           <ImageView
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_height="100dp"
+                android:src="@drawable/kalpna"/>
+
+            <Button
+                android:id="@+id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/purple"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#70c656"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Hint: She was the first woman of Indian origin to go into space."/>
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="A- Sunita williams"
+                android:background="@drawable/round_corner_button"
+                android:layout_marginBottom="10dp"
+                />
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="B- Kalpana Chawla"
+                android:background="@drawable/round_corner_button"
+                android:layout_marginBottom="10dp"
+                />
+            <Button
+                android:id="@+id/option3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_button"
+                android:layout_marginBottom="8dp"
+                android:text="C- Arundhati Roy"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <ImageView
+        android:id="@+id/image_navigation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
